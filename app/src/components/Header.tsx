@@ -1,10 +1,19 @@
+import Image from "next/image";
+
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Logo / Title */}
         <div className="flex items-center gap-3">
-          <div className="text-2xl">🛍️</div>
+          <Image
+            src="/logo_shopy_mom.png"
+            alt="Shopy Mom logo"
+            width={60}
+            height={60}
+            className="rounded-lg"
+          />
+
           <div>
             <p className="text-lg font-semibold leading-none">Shopy Mom</p>
             <p className="text-xs text-slate-400">Wishlist familiale</p>

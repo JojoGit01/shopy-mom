@@ -4,6 +4,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Shopy Mom",
   description: "Wishlist SHEIN simple et rapide",
+  icons: {
+    icon: "/logo_shopy_mom.png",
+    shortcut: "/logo_shopy_mom.png",
+    apple: "/logo_shopy_mom.png",
+  },
 };
 
 export default function RootLayout({

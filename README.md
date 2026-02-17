@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shopy Mom 🛍️
 
-## Getting Started
+Shopy Mom est une mini application web privée permettant de centraliser rapidement des références SHEIN dans une seule liste partagée.
 
-First, run the development server:
+L’objectif est simple : éviter les messages ou emails avec des références dispersées et générer une liste prête à commander en quelques secondes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Concept
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Une personne ajoute des articles (référence ou lien SHEIN) via un formulaire simple.  
+La liste est sauvegardée en ligne et peut être copiée en un clic pour passer commande.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Workflow :
 
-## Learn More
+1. Ajouter une référence ou coller un lien SHEIN
+2. Compléter les informations optionnelles (taille, couleur, quantité…)
+3. Copier la liste générée automatiquement
+4. Vider la liste une fois la commande effectuée
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Fonctionnalités principales
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Ajout d’un article via référence ou lien SHEIN
+- Extraction automatique de la référence depuis une URL
+- Ajout d’informations optionnelles :
+  - Nom
+  - Taille
+  - Couleur
+  - Quantité
+  - Notes
+- Affichage en temps réel de la liste
+- Suppression d’un article
+- Vidage complet de la liste
+- Génération automatique du message prêt à envoyer
+- Copie en un clic dans le presse-papier
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧰 Technologies utilisées
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js (React)
+- TypeScript
+- TailwindCSS
+- Supabase (base de données)
+- Vercel (déploiement)
+
+---
+
+## 💡 Objectif du projet
+
+Ce projet a été réalisé comme mini application utilitaire afin de :
+
+- tester Supabase avec Next.js
+- mettre en place un déploiement continu avec Vercel
+- créer rapidement une application utile dans un contexte réel
+
+---
+
+## 🚀 Statut
+
+Projet personnel — en amélioration continue.
